@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="home">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active" >
+          <a class="nav-link" href="">Logout <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active" >
+            <a class="nav-link" href="aspirants">Aspirant <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active" >
+            <a class="nav-link" href="experience">Experience <span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+<div>
+
+
+    <div>
+        <div>
+            <label> Experience</label>
+            <input name= "firstJob"type="text" [(ngModel)]="firstJob" placeholder="firstJob">
+        </div>
+        <input name="secondJob" [(ngModel)]="secondJob" type="text" class="form-control" placeholder="secondJob">
+        <input name="thirdJob" [(ngModel)]="thirdJob" type="text" class="form-control" placeholder="thirdJob">
+        <input name="corporateEmail" [(ngModel)]="corporateEmail" type="email" class="form-control" placeholder="corporateEmail">
+        <input name="personalEmail" [(ngModel)]="personalEmail" type="email" class="form-control" placeholder="personalEmail">
+        <input name="phonenumber" [(ngModel)]="phonenumber" type="text" class="form-control" placeholder="phonenumber">
+
+
+
+
+
+    <button (click)="experienceFunction(firstJob, secondJob, thirdJob, corporateEmail, personalEmail, phonenumber)">
+        register experience</button>
+    </div>
+
+</div>
